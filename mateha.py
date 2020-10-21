@@ -1,7 +1,8 @@
 #!/usr/bin/env python3
 
 import random
-print('примеры')
+
+print("\033[31m {}\033[0m  ".format('примеры на деление'))
 sp=[3,4,5,6,7,8,9]
 for d in range(1,5):
     # получаем  случайное целое
@@ -15,9 +16,9 @@ for d in range(1,5):
     f=random.choice(sp)
     #print("f вторая цифра",f)
     while i==f:
-        print("i=",i,",f=",f,"если цифры равны то меняем одну из них")
+        #print("i=",i,",f=",f,"если цифры равны то меняем одну из них")
         f=random.choice(sp)
     o=f*10+i
     h=a*o
-    print(d,"-",h,":",o)
+    print(d,")",h,":",o)
 
